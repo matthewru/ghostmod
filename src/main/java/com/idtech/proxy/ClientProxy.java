@@ -1,12 +1,15 @@
 package com.idtech.proxy;
 
 import com.idtech.BaseMod;
+import com.idtech.entity.EntityGhost;
+import com.idtech.entity.RenderGhostFactory;
 
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.RenderItem;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
+import net.minecraftforge.fml.client.registry.RenderingRegistry;
 
 /**
  * 
@@ -19,7 +22,10 @@ public class ClientProxy extends CommonProxy {
 	
 	@Override
 	public void registerEntityRenderers(){
-		// Add Client Rendering Code Here		
+
+		RenderingRegistry.registerEntityRenderingHandler(
+EntityGhost.class, RenderGhostFactory.INSTANCE);
+		
 	}
 	
 	

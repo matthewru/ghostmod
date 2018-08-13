@@ -1,6 +1,7 @@
 package com.idtech;
 
 import com.idtech.block.QuickBlock;
+import com.idtech.entity.EntityMod;
 import com.idtech.item.ItemMod;
 import com.idtech.item.QuickItem;
 import com.idtech.proxy.CommonProxy;
@@ -51,7 +52,7 @@ public class BaseMod
 		ItemMod.preInit();
 		QuickItem.preInit();
 		QuickBlock.preInit();
-
+		EntityMod.preInit();
 		LanguageLocalization.createLanguageFile();
 		JSONManager.buildJSON();
 	}
@@ -65,7 +66,7 @@ public class BaseMod
 		QuickItem.init();
 		QuickBlock.init();
 		RecipeMod.init();
-		
+		EntityMod.init();
 		WorldMod.init();
 
 

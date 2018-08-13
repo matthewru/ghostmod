@@ -5,3 +5,4 @@ item.examplemod_GhostShovel.name=Ghost Shovel
 item.examplemod_GhostHelmet.name=Ghost Helmet
 item.examplemod_GhostChestplate.name=Ghost Chestplate
 item.examplemod_GhostPepper.name=Ghost Pepper
+entity.CustomMob.name=Ghost Zombie
